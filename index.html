@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gym Website</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 3rem 1rem;
+            margin: 2rem 0;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Home Section */
+        #home {
+            background-color: #cce7ff;
+            text-align: center;
+        }
+
+        #home .cta-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        #home .cta-button:hover {
+            background-color: #555;
+        }
+
+        /* Service Section */
+        #services .service {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Pricing Section */
+        #pricing .pricing-plan {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #pricing .pricing-plan h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        #pricing .pricing-plan p {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        #pricing .pricing-plan ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #pricing .pricing-plan ul li {
+            margin: 10px 0;
+        }
+
+        /* Contact Section */
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        #contact form label {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        #contact form input, #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #contact form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #contact form button:hover {
+            background-color: #555;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Our Gym</h1>
+        <p>Your fitness journey starts here</p>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h2>Start Your Fitness Journey</h2>
+            <p>Join us today to get in the best shape of your life!</p>
+            <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a community-focused gym offering state-of-the-art equipment, personal training, and a supportive environment to help you reach your fitness goals.</p>
+        <p>Our mission is to inspire individuals to live healthier and happier lives by providing top-notch fitness services.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Personal Training</h3>
+            <p>Work one-on-one with our certified personal trainers to create a customized fitness plan.</p>
+        </div>
+        <div class="service">
+            <h3>Group Classes</h3>
+            <p>Join our fun and energetic group classes, including yoga, spinning, and HIIT.</p>
+        </div>
+        <div class="service">
+            <h3>Nutrition Coaching</h3>
+            <p>Get personalized nutrition advice to fuel your body and enhance your fitness results.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-plan">
+            <h3>Basic Membership</h3>
+            <p>$19.99 / month</p>
+            <ul>
+                <li>Access to gym equipment</li>
+                <li>Free fitness assessment</li>
+            </ul>
+        </div>
+        <div class="pricing-plan">
+            <h3>Premium Membership</h3>
+            <p>$49.99 / month</p>
+            <ul>
+                <li>Everything in Basic</li>
+                <li>Unlimited group classes</li>
+                <li>1 personal training session per month</li>
+            </ul>
+        </div>
+        <div class="pricing-plan">
+            <h3>VIP Membership</h3>
+            <p>$99.99 / month</p>
+            <ul>
+                <li>Everything in Premium</li>
+                <li>Unlimited personal training</li>
+                <li>Free nutrition coaching</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to book a tour, don't hesitate to get in touch with us!</p>
+        <address>
+            <p>Email: info@gymwebsite.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Location: 123 Gym St, Fitness City, Country</p>
+        </address>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Gym Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
